@@ -1,0 +1,21 @@
+{
+  "name": "playwrightcucumberrepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "npx ts-node tests/helper/reports/init.ts",
+    "test": "cucumber-js --config=tests/helper/config/cucumber.js",
+    "posttest": "npx ts-node tests/helper/reports/report.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.3.0",
+    "@playwright/test": "^1.36.1",
+    "fs-extra": "^11.1.1",
+    "multiple-cucumber-html-reporter": "^3.4.0",
+    "ts-node": "^10.9.1"
+  }
+}
